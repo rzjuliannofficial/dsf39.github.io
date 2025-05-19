@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --textBlack: rgb(0, 0, 0);
+    --textWhite: rgb(255, 255, 255);
+    --colorBackground: #FD853A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 8px 10px; */
+    /* margin: 0px 5%; */
+    padding: 0px 5%;
+    align-items: center;
+}
+
+header nav{
+    background-color: #2d3e50;
+    border-radius: 50px; 
+    padding: 8px 15px;
+    right: 0;
+}
+
+.logo img {
+    width: 200px;
+    padding-left: 30px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a{
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+}
+
+.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: #000 ;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.burger {
+    display:none; 
+    position: fixed;
+    right: 35px;
+}
+
+.resume button{
+    /* display: none; */
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: var(--colorBackground);
+    box-shadow: #000;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+.resume button:hover {
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: var(--colorBackground);
+    background-color: rgb(255, 255, 255);
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    color: #000;
+}
+
+header nav ul li a:hover {
+    color: var(--colorBackground);
+}
+
+/* digunakan untuk responsive website */
+@media screen and (max-width: 1100px) {
+    /* jika besar screen segitu ubah fitur2 menyesuaikan layar */
+    header{
+        background-color: rgb(255, 255, 255);
+
+    }
+    
+    header nav {
+        display: none; /* Sembunyikan navbar */
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background-color: rgb(77, 77, 77);
+        margin: 15px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        z-index: 98;
+    }
+    
+    header nav ul {
+        display: block;
+
+    }
+    
+    header nav.active {
+        display: flex ; /*Tampilkan navbar saat burger diklik */
+    }
+    
+    header .burger {
+        display: block; /* Tampilkan burger menu */
+        cursor: pointer;
+    }
+    
+    .resume button{
+        background-color: var(--colorBackground);
+        width: 80px;
+        height: 50px;
+    }
+
+    .resume button:hover {
+        width: 80px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        color: var(--colorBackground);
+        background-color: white;
+        box-shadow: #000;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+/* MAIN */
+#hero {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ini itu untuk mengasih efek grid */
+    align-items: center;
+    background-color: white;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img{
+    width: 400px;
+}
+
+.hero-left {
+    padding-left: 110px;
+    
+}
+.hero-left .pre-title {
+    text-transform: uppercase; /* ini itu untuk mengasih efek uppercase */
+    letter-spacing: 8px; /* ini itu untuk mengasih efek spasi antar huruf */
+    color: #656d72;
+    position: relative; /* ini itu untuk mengasih efek posisi */
+    width: fit-content;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.hero-left .hero-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 16px 0 16px; /* 8px untuk margin atas dan bawah , sedangkan 0 untuk margin kiri dan kanan, dan 16px untuk margin bawah */
+    /* padding-left: 40px; */
+    color: var(--colorBackground);
+}
+
+.hero-name span {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 16px 0 16px; /* 8px untuk margin atas dan bawah , sedangkan 0 untuk margin kiri dan kanan, dan 16px untuk margin bawah */
+    background: linear-gradient(90deg, #FD853A, #f3dd18, #ffa200 );
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: hero-name 4s infinite linear;
+}
+
+@keyframes hero-name {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.text {
+    text-transform: uppercase; /* ini itu untuk mengasih efek uppercase */
+    letter-spacing: 8px; /* ini itu untuk mengasih efek spasi antar huruf */
+    color: #28171b;
+    position: relative; /* ini itu untuk mengasih efek posisi */
+    width: fit-content;
+    font-weight: 900;
+    font-size: 2rem;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@media screen and (max-width : 900px) {
+
+    .hero-right img{
+        width: 90%;
+    }
+
+    .hero-left {
+        padding-left: 80px;
+    }
+
+    .hero-left .pre-title {
+        font-size: 50%;
+    }
+    
+    .hero-left .hero-name {
+        font-size: 100%;
+    }
+    
+    .hero-name span {
+        font-size: 100%;
+    }
+
+    .text {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #hero {
+        display: block;
+        padding: 0px 4rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .hero-right img{
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .hero-left {
+        padding: 0px;
+    }
+
+    .hero-left .pre-title {
+       padding-left: 30%;
+    }
+
+}
+
+
+
+/* ASIDE */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+ 
+main aside .social-media {
+    height: 1100px;
+    display: flex;
+}
+ 
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #2d3e50;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+ 
+main aside .social-media li {
+    list-style-type: none;
+}
+ 
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+ 
+main aside .social-media li a:hover {
+    color: var(--colorBackground);
+}
+
+
+/* About */
+#about{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ini itu untuk mengasih efek grid */
+    align-items: center;
+    margin: 2rem 0px;
+    
+}
+
+.about-right{
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.about-left{
+    display: flex;
+    justify-content: center;
+}
+
+.about-left img{
+    width: 400px;
+    padding: 0px 100px;
+}
+
+
+.about-right .title-about {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 3rem;
+}
+
+.about-right .text-about {
+    text-align: left;
+    padding: 1rem 20px;
+    padding-bottom: 30px;
+}
+
+
+.skills ul li {
+    /* padding-top: 30px; */
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.about-right .skills img{
+    width: 80%;
+}
+
+@media screen and (max-width: 1100px) {
+    #about{
+        display: block;
+        height: 900px;
+        padding: 0px 4rem;
+        margin: 0px;
+    }
+    
+    .about-left img{
+        width: 50%;
+    }
+    
+    .about-right .title-about {
+        text-align: center;
+    }
+    
+    .about-right .text-about {
+        text-align: justify;
+    }
+    
+    
+    .skills ul li {
+        padding:0px 20px;
+    }
+    
+    .about-right .skills img{
+        width: 80%;
+    }
+}
+
+/* Services */
+
+#services{
+    display: block;
+    height: 700px;
+    align-items: center;
+    margin: 0rem 5rem;
+    padding-top: 3rem;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.text-services p{
+    text-align:center;
+    padding: 1rem 10rem;
+}
+
+.card {
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.card-service {
+    background-color: #F8F8F8;
+    padding: 2rem 1rem ;
+    border-radius: 25px;
+}
+
+.service-icon {
+    /* text-align: center; */
+    font-size: 2.5rem;
+    color: var(--colorBackground);
+    
+}
+
+.card h3{
+    padding: 1rem 0px;
+}
+
+@media  screen and (max-width: 1100px) {
+    
+    #services {
+        padding-top: 10rem;
+    }
+    
+    .text-services p{
+        padding: 0;
+        text-align: justify;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+    
+}
+
+@media  screen and (max-width: 700px) {
+
+    #services {
+        padding-top: 0rem;
+    }
+    .card {
+        grid-template-columns: 1fr ;
+    }
+}
+
+/* project */
+
+#project {
+    display: block;
+    height:900px;
+    align-items: center;
+    margin: 0rem 5rem;
+}
+
+h1 .project-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.text-project p {
+    text-align: center;
+    padding: 1rem 10rem;
+    padding-bottom: 2rem;
+}
+
+.project-card{
+    display: flex;
+}
+
+.card-project {
+    margin: 0px 20px;
+}
+
+.card-project img {
+    width: 90%;
+}
+
+.card-project h4 {
+    padding: 1rem 0px;
+    font-size: 17px;
+    color: var(--colorBackground);
+}
+
+.card-project p {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 1100px) {
+    #project {
+        padding-top: 100px;
+    }
+
+    .text-project p {
+        padding: 1rem 1rem;
+        text-align: justify;
+    }
+
+    .project-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card-project p {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #project {
+        margin-top: 35rem;
+    }
+
+    .project-card {
+        display: block;
+        padding: 1rem 0px;
+    }
+    
+    .card-project img{
+        width: 100%;
+    }
+}
+
+/* Contact */
+#contact {
+    display: block;
+    height: 500px;
+    align-items: center;
+    padding: 0rem 5rem;
+    background-color: #272727;
+    color: var(--textWhite);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0px;
+    align-items: center;
+}
+
+.connect .contact-title{
+    font-size: 2.5rem;
+}
+
+.contact-button {
+    background-color: var(--colorBackground);
+    color: var(--colorText);
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--colorBackground);
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* background-color: #656d72; */
+}
+
+.contact-right h1 {
+    font-size: 2rem;
+}
+
+.contact-right form{
+    padding: 2rem 0px;
+}
+
+.contact-right form input{
+    width: 95%;
+    padding: 1rem;
+}
+
+.contact-right .submit-button {
+    text-align: center;
+}
+
+.submit-button {
+    background-color: var(--colorBackground);
+    color: var(--colorText);
+    width: 190px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--colorBackground);
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-left h1{
+   padding: 1rem 0px ;
+   
+}
+
+.contact-left p {
+    padding: 0.5rem 0px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: var(--colorBackground);
+}
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #000000;
+    color: white;
+}
+
+@media screen and (max-width:1100px) {
+    #contact {
+        margin-top: 40rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #contact {
+        margin-top: 25rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #contact {
+        margin-top: 25rem;
+        height: 400px;
+        padding: 0px 2rem;
+    }
+
+    .connect {
+        padding: 2rem 0px;
+    }
+    
+    .connect .contact-title{
+        font-size: 1.5rem;
+    }
+    
+    .contact-button {
+        background-color: var(--colorBackground);
+        color: var(--colorText);
+        width: 120px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .contact-right h1 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-right form{
+        padding: 1rem 0px;
+    }
+    
+    .contact-right form input{
+        width: 80%;
+        padding: 0.5rem;
+    }
+    
+    .contact-right .submit-button {
+        text-align: center;
+    }
+    
+    .submit-button {
+        width: 120px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    
+    .contact-left h1{
+       font-size: 1.1rem;
+    }
+    
+    .contact-left p {
+        font-size: 14px;
+    }
+    
+    .social-icons a {
+        font-size: 1.1rem;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+        
+
+
+@media screen and (max-width:700px) {
+    #contact {
+        margin-top: 90rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #contact {
+        margin-top: 80rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #contact {
+        margin-top: 80rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+   
+    #contact{
+        margin-top: 65rem;
+    }
+}
