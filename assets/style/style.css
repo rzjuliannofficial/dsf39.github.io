@@ -420,7 +420,7 @@ main aside .social-media li a:hover {
 }
 
 .contact-right form input{
-    width: 100%;
+    width: 95%;
     padding: 0.8rem;
     margin-bottom: 1rem;
     border: none;
@@ -460,7 +460,7 @@ main aside .social-media li a:hover {
 
 .social-icons a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .social-icons a:hover {
@@ -473,6 +473,7 @@ footer {
     padding: 0.5rem;
     background-color: #000000;
     color: white;
+    font-size: 0.8rem;
 }
 
 
