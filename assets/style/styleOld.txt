@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --textBlack: rgb(0, 0, 0);
+    --textWhite: rgb(255, 255, 255);
+    --colorBackground: #FD853A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body{
+    line-height: 1.6; 
+    color: var(--textBlack);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1); */
+    color: transparent;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav{
+    background-color: #2d3e50;
+    border-radius: 50px; 
+    padding: 8px 15px;
+    right: 0;
+}
+
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a{
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+}
+
+header nav ul li a:hover {
+    color: var(--colorBackground);
+}
+
+header .burger {
+    display:none; 
+    position: fixed;
+    right: 35px;
+    cursor: pointer;
+}
+
+header .burger div {
+    width: 25px;
+    height: 4px;
+    background-color: #000 ;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+
+.resume button{
+    /* display: none; */
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: var(--colorBackground);
+    box-shadow: #000;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+.resume button:hover {
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: var(--colorBackground);
+    background-color: rgb(255, 255, 255);
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    color: #000;
+}
+
+/* MAIN */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ini itu untuk mengasih efek grid */
+    /* height: 700px; */
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: white;
+}
+
+.hero-left {
+    text-align: left;   
+}
+
+.hero-left .pre-title {
+    text-transform: uppercase; /* ini itu untuk mengasih efek uppercase */
+    letter-spacing: 8px; /* ini itu untuk mengasih efek spasi antar huruf */
+    color: #656d72;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hero-left .hero-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--colorBackground);
+}
+
+
+.hero-left .hero-name span {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FD853A, #f3dd18, #ffa200 );
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: hero-name 4s infinite linear;
+}
+
+.hero-right {
+    text-align: center;
+}
+
+.hero-right img{
+    width: 100%;
+    max-width: 400px;
+}
+
+@keyframes hero-name {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.text {
+    text-transform: uppercase; 
+    letter-spacing: 8px; 
+    color: #28171b;
+    position: relative;
+    width: fit-content;
+    font-weight: 900;
+    font-size: 1.5rem;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+
+
+
+
+/* ASIDE */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+ 
+main aside .social-media {
+    height: 1100px;
+    display: flex;
+}
+ 
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #2d3e50;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+ 
+main aside .social-media li {
+    list-style-type: none;
+}
+ 
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+ 
+main aside .social-media li a:hover {
+    color: var(--colorBackground);
+}
+
+
+/* About */
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ini itu untuk mengasih efek grid */
+    align-items: center;
+    padding: 2rem 5%;
+    gap: 2rem;
+}
+
+.about-left img{
+    width: 400px;
+    max-width: 300px;
+}
+
+.about-left{
+    text-align: center;
+}
+
+.about-right .title-about {
+    padding-left: 20px;
+    font-size: 3rem;
+}
+
+.about-right .text-about {
+    /* text-align: left; */
+    /* padding: 1rem 20px; */
+    /* padding-bottom: 30px; */
+    color: grey;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.skills ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.about-right .skills img{
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+
+
+/* Services */
+
+#services{
+    margin: 2rem 5%;
+    text-align: center;
+    /* align-items: center; */
+    /* display: block;
+    height: 700px;
+    padding-top: 3rem; */
+}
+
+.service-title {
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.text-services p{
+    /* text-align:center;
+    padding: 1rem 10rem; */
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.card {
+    /* display: flex;
+    padding-top: 1rem;
+    gap: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-service {
+    background-color: #F8F8F8;
+    padding: 1.5rem ;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-service h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--textBlack);
+}
+
+.card-service p {
+    font-size: 0.9rem;
+    color: var(--colorGray);
+}
+
+.service-icon {
+    /* text-align: center; */
+    font-size: 2.5rem;
+    color: var(--colorBackground);
+    
+}
+
+/* .card h3{
+    padding: 1rem 0px;
+} */
+
+
+
+/* project */
+
+#project {
+    /* display: block;
+    height:900px; */
+    /* align-items: center;
+    margin: 0rem 5rem; */
+
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+.project-title {
+    /* text-align: center;
+    font-size: 50px; */
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.text-project {
+    /* text-align: center;
+    padding: 1rem 10rem;
+    padding-bottom: 2rem; */
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.project-card{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-project {
+    /* margin: 0px 20px; */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-project img {
+    /* width: 90%; */
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* .card-project h4 {
+    padding: 1rem 0px;
+    font-size: 17px;
+    color: var(--colorBackground);
+}
+
+.card-project p {
+    font-weight: bold;
+    font-size: 19px;
+} */
+
+
+
+/* Contact */
+#contact {
+    /* display: block;
+    height: 500px;
+    align-items: center;
+    padding: 0rem 5rem; */
+    background-color: #272727;
+    color: var(--textWhite);
+    border-radius: 25px 25px 0px 0px;
+    padding: 0rem 5%;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0px;
+    align-items: center;
+}
+
+.connect .contact-title{
+    font-size: 2rem;
+}
+
+
+
+.contact-button {
+    background-color: var(--colorBackground);
+    color: var(--colorText);
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--colorBackground);
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-right h1 {
+    font-size: 2rem;
+}
+
+.contact-right form{
+    padding: 1rem 0px;
+}
+
+.contact-left,
+.contact-right {
+    text-align: left;
+}
+
+.contact-right form input{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: var(--colorBackground);
+    color: var(--colorText);
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--colorBackground);
+    font-weight: bold;
+}
+
+.contact-left h1{
+   padding: 1rem 0px ;
+   
+}
+
+.contact-left p {
+    padding: 0.5rem 0px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: var(--colorBackground);
+}
+/* Footer */
+
+footer {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 1rem;
+    background-color: #000000;
+    color: white;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 850px) {
+    /* jika besar screen segitu ubah fitur2 menyesuaikan layar */
+    
+    header nav {
+        display: none; /* Sembunyikan navbar */
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background-color: rgb(77, 77, 77);
+        margin: 15px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        z-index: 98;
+    }
+    
+    header nav ul {
+        display: block;
+    
+    }
+    
+    header nav.active {
+        display: flex ; /*Tampilkan navbar saat burger diklik */
+    }
+    
+    header .burger {
+        display: block; /* Tampilkan burger menu */
+        cursor: pointer;
+    }
+    
+    .resume button{
+        background-color: var(--colorBackground);
+        width: 80px;
+        height: 50px;
+    }
+    
+    .resume button:hover {
+        width: 80px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        color: var(--colorBackground);
+        background-color: white;
+        box-shadow: #000;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    #hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
