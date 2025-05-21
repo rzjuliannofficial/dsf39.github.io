@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('active');
     });
 
+   
+
     // JavaScript untuk mengelola efek auto-typing
     const typed = new Typed(".auto-typing", {
         strings: ["FrontEnd Developer", "BackEnd Developer", "FullStack Developer"],
@@ -17,3 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true
     });
 });
+

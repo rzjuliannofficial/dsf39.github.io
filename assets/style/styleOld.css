@@ -28,6 +28,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1); */
     color: transparent;
 }
 
@@ -56,7 +57,7 @@ header nav ul li {
 header nav ul li a{
     justify-content: space-between;
     color: rgb(255, 255, 255);
-
+    /* font-weight: bold; */
 }
 
 header nav ul li a:hover {
@@ -89,6 +90,7 @@ header .burger div {
     background-color: var(--colorBackground);
     box-shadow: #000;
     cursor: pointer;
+    /* font-weight: bold; */
 }
 
 .resume button:hover {
@@ -111,6 +113,7 @@ button:hover{
 #hero {
     display: grid;
     grid-template-columns: 1fr 1fr; /* ini itu untuk mengasih efek grid */
+    /* height: 700px; */
     align-items: center;
     padding: 2rem 5%;
     background-color: white;
@@ -173,6 +176,9 @@ button:hover{
     font-size: 1.5rem;
     animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
 }
+
+
+
 
 
 /* ASIDE */
@@ -240,7 +246,10 @@ main aside .social-media li a:hover {
 }
 
 .about-right .text-about {
-
+    /* text-align: left; */
+    /* padding: 1rem 20px; */
+    /* padding-bottom: 30px; */
+    color: grey;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -264,25 +273,37 @@ main aside .social-media li a:hover {
 }
 
 
+
 /* Services */
+
 #services{
     margin: 2rem 5%;
     text-align: center;
+    /* align-items: center; */
+    /* display: block;
+    height: 700px;
+    padding-top: 3rem; */
 }
 
 .service-title {
-    font-size: 2.5rem;
+    /* text-align: center; */
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .text-services p{
+    /* text-align:center;
+    padding: 1rem 10rem; */
     font-size: 1rem;
     color: grey;
     margin-bottom: 2rem;
 }
 
 .card {
+    /* display: flex;
+    padding-top: 1rem;
+    gap: 1rem; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -307,37 +328,56 @@ main aside .social-media li a:hover {
 }
 
 .service-icon {
+    /* text-align: center; */
     font-size: 2.5rem;
     color: var(--colorBackground);
     
 }
 
+/* .card h3{
+    padding: 1rem 0px;
+} */
+
+
+
 /* project */
 
 #project {
+    /* display: block;
+    height:900px; */
+    /* align-items: center;
+    margin: 0rem 5rem; */
+
     text-align: center;
     padding: 2rem 5%;
 }
 
 .project-title {
-    font-size: 2.5rem;
+    /* text-align: center;
+    font-size: 50px; */
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .text-project {
+    /* text-align: center;
+    padding: 1rem 10rem;
+    padding-bottom: 2rem; */
     font-size: 1rem;
     color: grey;
     margin-bottom: 2rem;
 }
 
 .project-card{
+    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
 .card-project {
+    /* margin: 0px 20px; */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -345,24 +385,31 @@ main aside .social-media li a:hover {
 }
 
 .card-project img {
+    /* width: 90%; */
     width: 100%;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
 
-.card-project h4 {
-    text-align: left;
+/* .card-project h4 {
+    padding: 1rem 0px;
+    font-size: 17px;
     color: var(--colorBackground);
 }
 
 .card-project p {
-    text-align: left;
-}
+    font-weight: bold;
+    font-size: 19px;
+} */
 
 
 
 /* Contact */
 #contact {
+    /* display: block;
+    height: 500px;
+    align-items: center;
+    padding: 0rem 5rem; */
     background-color: #272727;
     color: var(--textWhite);
     border-radius: 25px 25px 0px 0px;
@@ -379,6 +426,8 @@ main aside .social-media li a:hover {
 .connect .contact-title{
     font-size: 2rem;
 }
+
+
 
 .contact-button {
     background-color: var(--colorBackground);
@@ -466,11 +515,14 @@ main aside .social-media li a:hover {
 .social-icons a:hover {
     color: var(--colorBackground);
 }
-
 /* Footer */
+
 footer {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #000000;
     color: white;
 }
