@@ -370,13 +370,13 @@ main aside .social-media li a:hover {
     background-color: #272727;
     color: var(--textWhite);
     border-radius: 25px 25px 0px 0px;
-    padding: 0rem 5%;
+    padding: 0rem 4%;
 }
 
 .connect {
     display: flex;
     justify-content: space-between;
-    padding: 4rem 0px;
+    padding: 3rem 0rem 1.5rem 0rem;
     align-items: center;
 }
 
@@ -407,7 +407,7 @@ main aside .social-media li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 .contact-right h1 {
@@ -460,6 +460,7 @@ main aside .social-media li a:hover {
 .social-icons {
     display: flex;
     gap: 20px;
+    padding-bottom: 1rem;
 }
 
 .social-icons a {
