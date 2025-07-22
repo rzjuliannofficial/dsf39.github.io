@@ -48,7 +48,7 @@ This site was built to showcase my technical skills, personal projects, and serv
 If you're interested in collaborating, feel free to reach out:
 
 - 📧 Email: [nrjulian24@gmail.com](mailto:nrjulian24@gmail.com)  
-- 💬 WhatsApp: [Chat Me](https://wa.me/62XXXXXXXXXXX)  
+- 💬 WhatsApp: [Chat Me](https://wa.me/62895367117356)  
 - 💻 GitHub: [@rzjuliannofficial](https://github.com/rzjuliannofficial)
 
 ---
