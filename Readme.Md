@@ -38,7 +38,7 @@ This site was built to showcase my technical skills, personal projects, and serv
 
 ## 📸 Preview
 
-![Portfolio Screenshot](https://raw.githubusercontent.com/rzjuliannofficial/dsf39.github.io/main/preview.png)
+![Portfolio Screenshot](/assets/img/previewproject.png)
 
 > *Add your screenshot image in the root repo with name `preview.png` for the above preview to show up.*
 
