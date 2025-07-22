@@ -30,9 +30,9 @@ This site was built to showcase my technical skills, personal projects, and serv
 
 - **Hero Section** — Introduction, headline, and call-to-action
 - **About Me** — Short bio and skills
-- **Services** — What I offer: Web Dev, UI/UX, AI Video, Prompt Engineering
+- **Services** — What I offer: Web Dev, UI/UX, Prompt Engineering
 - **Projects** — Selected works & in-progress apps
-- **Contact** — Direct links to email, WhatsApp, and GitHub
+- **Contact** — Direct links to  WhatsApp, Instagram , LinkedIn and GitHub
 
 ---
 
