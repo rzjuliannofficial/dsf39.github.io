@@ -170,7 +170,8 @@ button:hover{
     border: var(--colorBackground) solid 2.5px;
 }
 
-.view-button {
+.view-button,
+.view-project{
     background-color: rgb(49, 49, 49);
     color: var(--textWhite);
     padding: 0.8rem 1.2rem;
@@ -178,9 +179,11 @@ button:hover{
     cursor: pointer;
     font-weight: bold;
     border: rgb(49, 49, 49) solid 2.5px;
+    margin-top: 1rem;
 }
 
-.view-button:hover {
+.view-button:hover,
+.view-project:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     box-shadow: #000;
@@ -434,7 +437,7 @@ main aside .social-media li a:hover {
     cursor: pointer;
     font-weight: 500;
     border: none;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .contact-button:hover {
@@ -577,6 +580,7 @@ footer {
     #hero {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
 
     #about {
@@ -586,5 +590,10 @@ footer {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-button {
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
