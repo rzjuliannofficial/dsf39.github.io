@@ -149,6 +149,46 @@ button:hover{
     animation: hero-name 4s infinite linear;
 }
 
+.hire-button {
+    background-color: var(--colorBackground);
+    color: var(--textWhite);
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: var(--colorBackground) solid 2.5px;
+    margin-top: 2.5rem;
+}
+
+.hire-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--colorBackground);
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+    border: var(--colorBackground) solid 2.5px;
+}
+
+.view-button {
+    background-color: rgb(49, 49, 49);
+    color: var(--textWhite);
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: rgb(49, 49, 49) solid 2.5px;
+}
+
+.view-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: #000;
+    cursor: pointer;
+    font-weight: bold;
+    border: black solid 2.5px;
+}
+
 .hero-right {
     text-align: center;
 }
@@ -386,13 +426,15 @@ main aside .social-media li a:hover {
 
 .contact-button {
     background-color: var(--colorBackground);
-    color: var(--colorText);
+    color: var(--textWhite);
     width: 180px;
     height: 50px;
     border-radius: 50px;
     font-size: 1.1rem;
     cursor: pointer;
     font-weight: 500;
+    border: none;
+    margin-top: 1rem;
 }
 
 .contact-button:hover {
@@ -433,7 +475,7 @@ main aside .social-media li a:hover {
 
 .submit-button {
     background-color: var(--colorBackground);
-    color: var(--colorText);
+    color: var(--textWhite);
     font-size: 1.1rem;
     border-radius: 50px;
     cursor: pointer;
@@ -442,7 +484,7 @@ main aside .social-media li a:hover {
     margin-bottom: 1rem;
 }
 
-.submit-button:hover {
+.submit-button:hover{
     background-color: rgb(255, 255, 255);
     color: var(--colorBackground);
     font-weight: bold;
